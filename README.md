@@ -10,7 +10,7 @@
 
 ## Info
 
-Realtime chat app with websockets using Node.js, Express and Socket.io on the backend and Vanilla JS on the frontend. The foundation is based on the Brad Traversy tutorial, but was further developed by Team Tukka in the summer of 2020.
+Realtime chat app with websockets using Node.js, Express and Socket.io on the backend and Vanilla JS on the frontend. The foundation is based on the <a href="https://www.youtube.com/watch?v=jD7FnbI76Hg">Brad Traversy tutorial</a>, but was further developed by <a href="https://github.com/Team-Tukka">Team Tukka</a> in the summer of 2020.
 
 ## Usage
 
