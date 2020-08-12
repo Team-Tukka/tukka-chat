@@ -8,7 +8,9 @@
    <img src="https://img.shields.io/github/license/Team-Tukka/tukka-chat" alt="License" />
 </div>
 
-Realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend. The foundation is based on the Brad Traversy tutorial, but was further developed by Team Tukka in the summer of 2020.
+## Info
+
+Realtime chat app with websockets using Node.js, Express and Socket.io on the backend and Vanilla JS on the frontend. The foundation is based on the Brad Traversy tutorial, but was further developed by Team Tukka in the summer of 2020.
 
 ## Usage
 
