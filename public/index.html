@@ -17,29 +17,26 @@
   <body>
     <div class="join-container">
       <header class="join-header">
-        <h1>
-          <img src="/assets/tukkaLogo.png" alt="Tukka logo" width="50rem" />
-          Tukka Chat
-        </h1>
+        <img class="join-tukka-logo" src="assets/tukkaLogo.png" alt="Tukka logo" />
+        <h1>Tukka Chat</h1>
       </header>
       <main class="join-main">
         <form action="chat.html">
           <div class="form-control">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Enter username..." required />
+            <label for="username">Navn</label>
+            <input type="text" name="username" id="username" placeholder="Indtast dit navn..." required />
           </div>
           <div class="form-control">
-            <label for="room">Room</label>
+            <label for="room">Chatrum</label>
             <select name="room" id="room">
-              <option value="JavaScript">JavaScript</option>
-              <option value="Python">Python</option>
-              <option value="PHP">PHP</option>
-              <option value="C#">C#</option>
-              <option value="Ruby">Ruby</option>
-              <option value="Java">Java</option>
+              <option value="Programmering">Programmering</option>
+              <option value="Systemudvikling">Systemudvikling</option>
+              <option value="Database">Database</option>
+              <option value="Start-up">Start-up</option>
+              <option value="Hyggechat">Hyggechat</option>
             </select>
           </div>
-          <button type="submit" class="btn">Join Chat</button>
+          <button type="submit" class="btn">Start chat</button>
         </form>
       </main>
     </div>
