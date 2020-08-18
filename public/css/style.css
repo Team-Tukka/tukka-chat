@@ -6,8 +6,8 @@
   --dark-yellow-color: rgb(154, 148, 26);
   --white-color: rgb(255, 254, 249);
   --black-color: rgb(31, 27, 8);
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
+  --light-text-shadow: 0 0 3px var(--white-color);
+  --dark-text-shadow: 0 0 3px var(--black-color);
 }
 
 * {
@@ -67,6 +67,7 @@ a {
   color: var(--white-color);
   border: 0;
   font-size: 18px;
+  text-shadow: var(--dark-text-shadow);
 }
 
 /* Chat Page */
@@ -93,6 +94,7 @@ a {
   display: flex;
   justify-content: start;
   font-size: 14px;
+  text-shadow: var(--dark-text-shadow);
 }
 
 .chat-title img {
@@ -111,6 +113,7 @@ a {
   color: var(--black-color);
   padding: 20px 20px 60px;
   overflow-y: scroll;
+  text-shadow: var(--light-text-shadow);
 }
 
 .chat-sidebar h2 {
@@ -187,6 +190,7 @@ a {
   background: var(--dark-yellow-color);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  text-shadow: var(--dark-text-shadow);
 }
 
 .join-header img {
@@ -203,10 +207,6 @@ a {
   background: var(--light-yellow-color);
 }
 
-.join-main p {
-  margin-bottom: 20px;
-}
-
 .join-main .form-control {
   margin-bottom: 20px;
 }
@@ -216,6 +216,7 @@ a {
   font-weight: bold;
   margin-bottom: 5px;
   color: var(--black-color);
+  text-shadow: var(--light-text-shadow);
 }
 
 .join-main input[type="text"] {
