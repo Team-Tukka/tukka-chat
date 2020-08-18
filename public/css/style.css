@@ -8,6 +8,8 @@
   --black-color: rgb(31, 27, 8);
   --light-text-shadow: 0 0 3px var(--white-color);
   --dark-text-shadow: 0 0 3px var(--black-color);
+  --box-shadow: 1px 1px 3px rgba(31, 27, 8, 0.5);
+  --box-shadow-container: 0 0 20px rgba(31, 27, 8, 0.4);
 }
 
 * {
@@ -68,6 +70,70 @@ a {
   border: 0;
   font-size: 18px;
   text-shadow: var(--dark-text-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+/* Join Page */
+
+.join-container {
+  max-width: 500px;
+  margin: 80px auto;
+  color: #fff;
+  box-shadow: var(--box-shadow-container);
+}
+
+.join-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--dark-yellow-color);
+  text-shadow: var(--dark-text-shadow);
+}
+
+.join-header img {
+  width: 3.5rem;
+  padding-right: 0.7rem;
+}
+
+.join-header h1 {
+  display: inline;
+}
+
+.join-main {
+  padding: 30px 40px;
+  background: var(--light-yellow-color);
+}
+
+.join-main .form-control {
+  margin-bottom: 20px;
+}
+
+.join-main label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--black-color);
+  text-shadow: var(--light-text-shadow);
+}
+
+.join-main input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  margin-top: 20px;
+  width: 100%;
 }
 
 /* Chat Page */
@@ -75,15 +141,14 @@ a {
 .chat-container {
   max-width: 1100px;
   background: #fff;
-  margin: 30px auto;
+  margin: 50px auto;
   overflow: hidden;
+  box-shadow: var(--box-shadow-container);
 }
 
 .chat-header {
   background: var(--dark-yellow-color);
   color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -144,6 +209,7 @@ a {
   background-color: rgb(253, 250, 237);
   border-radius: 5px;
   overflow-wrap: break-word;
+  box-shadow: var(--box-shadow);
 }
 
 .chat-messages .message .meta {
@@ -172,70 +238,6 @@ a {
   padding: 5px;
   height: 40px;
   flex: 1;
-}
-
-/* Join Page */
-
-.join-container {
-  max-width: 500px;
-  margin: 80px auto;
-  color: #fff;
-}
-
-.join-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background: var(--dark-yellow-color);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  text-shadow: var(--dark-text-shadow);
-}
-
-.join-header img {
-  width: 3.5rem;
-  padding-right: 0.7rem;
-}
-
-.join-header h1 {
-  display: inline;
-}
-
-.join-main {
-  padding: 30px 40px;
-  background: var(--light-yellow-color);
-}
-
-.join-main .form-control {
-  margin-bottom: 20px;
-}
-
-.join-main label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: var(--black-color);
-  text-shadow: var(--light-text-shadow);
-}
-
-.join-main input[type="text"] {
-  font-size: 16px;
-  padding: 5px;
-  height: 40px;
-  width: 100%;
-}
-
-.join-main select {
-  font-size: 16px;
-  padding: 5px;
-  height: 40px;
-  width: 100%;
-}
-
-.join-main .btn {
-  margin-top: 20px;
-  width: 100%;
 }
 
 @media (max-width: 700px) {
