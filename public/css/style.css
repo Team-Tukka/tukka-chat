@@ -68,9 +68,14 @@ a {
   background: var(--orange-color);
   color: var(--white-color);
   border: 0;
+  border-radius: 6px;
   font-size: 18px;
   text-shadow: var(--dark-text-shadow);
   box-shadow: var(--box-shadow);
+}
+
+i {
+  margin-right: 4px;
 }
 
 /* Join Page */
@@ -106,22 +111,28 @@ a {
 }
 
 .join-main .form-control {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .join-main label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: var(--black-color);
   text-shadow: var(--light-text-shadow);
 }
 
 .join-main input[type="text"] {
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px;
   height: 40px;
   width: 100%;
+  border: 0;
+  border-radius: 6px;
+}
+
+.join-main input[type="text"]:focus {
+  background-color: rgb(255, 253, 164);
 }
 
 .join-main select {
@@ -129,11 +140,23 @@ a {
   padding: 5px;
   height: 40px;
   width: 100%;
+  border: 0;
+  border-radius: 6px;
+}
+
+.join-main select:focus {
+  background-color: rgb(255, 253, 164);
 }
 
 .join-main .btn {
-  margin-top: 20px;
+  margin: 20px 0 5px;
   width: 100%;
+}
+
+.join-main .btn:hover {
+  background: var(--dark-yellow-color);
+  color: var(--white-color);
+  text-shadow: var(--dark-text-shadow);
 }
 
 /* Chat Page */
@@ -146,10 +169,16 @@ a {
   box-shadow: var(--box-shadow-container);
 }
 
+.chat-container .btn:hover {
+  background: var(--light-yellow-color);
+  color: var(--black-color);
+  text-shadow: var(--light-text-shadow);
+}
+
 .chat-header {
   background: var(--dark-yellow-color);
   color: #fff;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -186,6 +215,7 @@ a {
   background: rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 .chat-sidebar h3 {
@@ -225,7 +255,7 @@ a {
 }
 
 .chat-form-container {
-  padding: 20px 30px;
+  padding: 20px;
   background-color: var(--dark-yellow-color);
 }
 
@@ -235,12 +265,19 @@ a {
 
 .chat-form-container input[type="text"] {
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px;
+  margin-right: 15px;
   height: 40px;
+  border: 0;
+  border-radius: 6px;
   flex: 1;
 }
 
-@media (max-width: 700px) {
+.chat-form-container input[type="text"]:focus {
+  background-color: rgb(255, 253, 164);
+}
+
+@media (max-width: 900px) {
   .chat-main {
     display: block;
   }
@@ -248,4 +285,8 @@ a {
   .chat-sidebar {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
+  /* Kommer snart */
 }
