@@ -72,6 +72,11 @@ a {
   font-size: 18px;
   text-shadow: var(--dark-text-shadow);
   box-shadow: var(--box-shadow);
+  transition: background-color 0.7s;
+}
+
+.btn-mobile {
+  display: none;
 }
 
 i {
@@ -277,6 +282,8 @@ i {
   background-color: rgb(255, 253, 164);
 }
 
+/* Media Queries */
+
 @media (max-width: 900px) {
   .chat-main {
     display: block;
@@ -288,5 +295,67 @@ i {
 }
 
 @media (max-width: 500px) {
-  /* Kommer snart */
+  .btn {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: block;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .join-header {
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .join-header img {
+    display: none;
+  }
+
+  .join-main {
+    padding: 25px 35px;
+  }
+
+  .join-main input[type="text"] {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .join-main select {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .join-main .btn {
+    margin: 30px 0 5px;
+  }
+
+  .chat-header {
+    padding: 15px;
+  }
+
+  .chat-title {
+    font-size: 12px;
+  }
+
+  .chat-title img {
+    display: none;
+  }
+
+  .chat-messages {
+    padding: 20px;
+  }
+
+  .chat-form-container {
+    padding: 15px;
+  }
+
+  .chat-form-container input[type="text"] {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-right: 10px;
+    height: 35px;
+  }
 }
